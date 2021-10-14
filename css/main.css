@@ -30,7 +30,7 @@ p {
 img {
     display: block;
     max-width: 100%;
-    /* If the screen size is above the value then it makes the image shrink to 100% of screen width */
+    /* If the screen size is below the img width then it makes the image shrink to 100% of screen width */
 }
 
 body {
@@ -70,7 +70,8 @@ section {
     /* applies margin only on left and right; */
     margin-inline: auto;
     /* `margin-block` helps to apply margin on top and bottom  */
-    width: min(90%, 70.5rem)/* min width is 90% and max width is 70.5rem */
+    width: min(90%, 70.5rem)
+    /* min width is 90% and max width is 70.5rem */
 }
 
 .container--narrow {
