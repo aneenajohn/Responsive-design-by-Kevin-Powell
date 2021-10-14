@@ -21,6 +21,18 @@ p {
     margin: 0;
 }
 
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    /* If the screen size is above the value then it makes the image shrink to 100% of screen width */
+}
+
 body {
     font-size: 1.3125rem;
     font-family: var(--ff-primary);
@@ -31,13 +43,20 @@ body {
 h1,
 h2,
 h3 {
+    color: var(--clr-primary-400);
     font-family: var(--ff-accent);
     line-height: 1;
     font-weight: 900;
+    /* margin-bottom: 1em; */
 }
 
+header,
 section {
     padding: 3rem 0;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .container {
@@ -45,6 +64,10 @@ section {
     margin-inline: auto;
     /* `margin-block` helps to apply margin on top and bottom  */
     width: min(90%, 70.5rem)/* min width is 90% and max width is 70.5rem */
+}
+
+.container--narrow {
+    max-width: 35rem;
 }
 
 .bg-light {
